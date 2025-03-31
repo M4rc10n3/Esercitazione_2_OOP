@@ -41,10 +41,9 @@ public:
         return imaginary;
     }
 
-    //Creating a method that gives the conjugate of the complex number as its output
-    complex_number conjugate(void){
-        imaginary = -imaginary;
-        return *this;
+    //Creating a method that gives the conjugate of the complex number as its output 
+    complex_number conjugate(void) const {
+        return complex_number(real,-imaginary);
     }
 };
 
